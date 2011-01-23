@@ -8,6 +8,7 @@ Source0:	http://dante.ctan.org/tex-archive/support/%{name}.zip
 # Source0-md5:	70fdec50c25c5807e7ec071b88d4af49
 URL:		http://www.ctan.org/tex-archive/support/latexdiff/
 Suggests:	texlive-latex-effects
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 BuildArch:	noarch
 
