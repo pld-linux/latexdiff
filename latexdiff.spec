@@ -1,16 +1,16 @@
 Summary:	Determine and mark up significant differences between latex files
 Name:		latexdiff
-Version:	0.5
+Version:	1.0.4
 Release:	0.1
-License:	GPL v2
+License:	GPL v3
 Group:		Applications
 Source0:	http://dante.ctan.org/tex-archive/support/%{name}.zip
-# Source0-md5:	70fdec50c25c5807e7ec071b88d4af49
+# Source0-md5:	40e076101b87e2334e20fa946b8a1607
 URL:		http://www.ctan.org/tex-archive/support/latexdiff/
-Suggests:	texlive-latex-effects
 BuildRequires:	unzip
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Suggests:	texlive-latex-effects
 BuildArch:	noarch
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Latexdiff is a Perl script for visual mark up and revision of
@@ -42,6 +42,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc CHANGES README
+%doc README
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man1/latex*.1.*
