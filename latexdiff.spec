@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	Determine and mark up significant differences between latex files
 Name:		latexdiff
 Version:	1.0.4
@@ -6,7 +7,9 @@ License:	GPL v3
 Group:		Applications
 Source0:	http://dante.ctan.org/tex-archive/support/%{name}.zip
 # Source0-md5:	40e076101b87e2334e20fa946b8a1607
+Patch0:		%{name}-system-perl.patch
 URL:		http://www.ctan.org/tex-archive/support/latexdiff/
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	unzip
 Suggests:	texlive-latex-effects
 BuildArch:	noarch
@@ -25,6 +28,7 @@ accept or reject selected changes only.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p1
 
 %build
 

@@ -1,0 +1,56 @@
+commit 6ac9dfc6021da39752ea16e34034cbf9fd42246d
+Author: Kacper Kornet <draenog@pld-linux.org>
+Date:   Mon Sep 1 23:40:59 2014 +0100
+
+    Always use system perl
+
+diff --git a/latexdiff b/latexdiff
+index 717a093..57062e1 100755
+--- a/latexdiff
++++ b/latexdiff
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ ##!/usr/bin/perl -w
+ # latexdiff - differences two latex files on the word level
+ #             and produces a latex file with the differences marked up.
+diff --git a/latexdiff-fast b/latexdiff-fast
+index 22f2f8f..08e1845 100755
+--- a/latexdiff-fast
++++ b/latexdiff-fast
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ ##!/usr/bin/perl -w
+ # latexdiff - differences two latex files on the word level
+ #             and produces a latex file with the differences marked up.
+diff --git a/latexdiff-so b/latexdiff-so
+index 6cd69fd..d3497cb 100755
+--- a/latexdiff-so
++++ b/latexdiff-so
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl
++#!/usr/bin/perl
+ ##!/usr/bin/perl -w
+ # latexdiff - differences two latex files on the word level
+ #             and produces a latex file with the differences marked up.
+diff --git a/latexdiff-vc b/latexdiff-vc
+index d38fc14..b9b8e2f 100755
+--- a/latexdiff-vc
++++ b/latexdiff-vc
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl 
++#!/usr/bin/perl
+ #
+ # latexdiff-vc  - wrapper script for applying latexdiff to rcs managed files
+ #                 and for automatised creation of postscript or pdf from difference file
+diff --git a/latexrevise b/latexrevise
+index 85955af..72d2c91 100755
+--- a/latexrevise
++++ b/latexrevise
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env perl 
++#!/usr/bin/perl
+ #   latexrevise - takes output file of latexdiff and removes either discarded
+ #                 or appended passages, then deletes all other latexdiff markup
+ #
