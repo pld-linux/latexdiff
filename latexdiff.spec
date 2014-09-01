@@ -2,7 +2,7 @@
 Summary:	Determine and mark up significant differences between latex files
 Name:		latexdiff
 Version:	1.0.4
-Release:	0.1
+Release:	1
 License:	GPL v3
 Group:		Applications
 Source0:	http://dante.ctan.org/tex-archive/support/%{name}.zip
@@ -11,6 +11,7 @@ Patch0:		%{name}-system-perl.patch
 URL:		http://www.ctan.org/tex-archive/support/latexdiff/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	unzip
+Requires:	diffutils
 Suggests:	texlive-latex-effects
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -36,7 +37,7 @@ accept or reject selected changes only.
 rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_mandir}/man1}
-%{__make} install \
+%{__make} install-fast \
 	INSTALLPATH=$RPM_BUILD_ROOT%{_prefix} \
 	INSTALLMANPATH=$RPM_BUILD_ROOT%{_mandir} \
 	INSTALLEXECPATH=$RPM_BUILD_ROOT%{_bindir}
