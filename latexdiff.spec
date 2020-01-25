@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.perl
 Summary:	Determine and mark up significant differences between latex files
 Name:		latexdiff
 Version:	1.0.4
