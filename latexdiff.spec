@@ -28,7 +28,7 @@ accept or reject selected changes only.
 
 %prep
 %setup -q -n %{name}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 
