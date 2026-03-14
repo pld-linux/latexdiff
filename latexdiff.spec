@@ -1,7 +1,7 @@
 Summary:	Determine and mark up significant differences between latex files
 Name:		latexdiff
 Version:	1.0.4
-Release:	1
+Release:	2
 License:	GPL v3
 Group:		Applications
 Source0:	http://dante.ctan.org/tex-archive/support/%{name}.zip
